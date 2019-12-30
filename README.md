@@ -1,6 +1,6 @@
 # connect-mongo
 
-MongoDB session store for [Connect](https://github.com/senchalabs/connect) and [Express](http://expressjs.com/)
+MongoDB session store for fastify-session
 
 [![npm version](https://img.shields.io/npm/v/connect-mongo.svg)](https://www.npmjs.com/package/connect-mongo)
 [![downloads](https://img.shields.io/npm/dm/connect-mongo.svg)](https://www.npmjs.com/package/connect-mongo)
