@@ -55,17 +55,10 @@ function computeTransformFunctions(options) {
 
 module.exports = function(connect) {
   const Store = connect.Store || connect.session.Store
-  const MemoryStore = connect.MemoryStore || connect.session.MemoryStore
-
   class MongoStore extends Store {
     constructor(options) {
       options = options || {}
-
-      /* Fallback */
-      if (options.fallbackMemory && MemoryStore) {
-        return new MemoryStore()
-      }
-
+      
       super(options)
 
       /* Use crypto? */
